@@ -34,9 +34,9 @@ class ModuleModel extends EloquentModel implements ModuleInterface
      */
     protected static function boot()
     {
-        self::observe(app(EloquentObserver::class));
-
         parent::boot();
+
+        self::observe(app(EloquentObserver::class));
     }
 
     /**

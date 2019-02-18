@@ -34,9 +34,9 @@ class ExtensionModel extends EloquentModel implements ExtensionInterface
      */
     protected static function boot()
     {
-        self::observe(app(EloquentObserver::class));
-
         parent::boot();
+
+        self::observe(app(EloquentObserver::class));
     }
 
     /**
